@@ -17,11 +17,11 @@ Try running the following commands:
 
 ## Deploy in production DBT
 
-![Alt text](https://res.cloudinary.com/dhavhzmvy/image/upload/v1705296451/dbt-learn/dbt-production_r5cpjb.png)
+![dbt-learn cloudinary](https://res.cloudinary.com/dhavhzmvy/image/upload/v1705296451/dbt-learn/dbt-production_r5cpjb.png)
 
 
 ## Load data in Snowflake
 
-![Alt image](https://res.cloudinary.com/dhavhzmvy/image/upload/v1705296451/dbt-learn/snowflake-tables_nvj58m.png)
+![snowflake cloudinary](https://res.cloudinary.com/dhavhzmvy/image/upload/v1705296451/dbt-learn/snowflake-tables_nvj58m.png)
 
 
