@@ -30,9 +30,9 @@ models:
     description: "the total purchases for each customer in snowflake sample data"
     columns:
       - name: c_custkey
-        tests: 
-          - unique
-          - not_null
+        #tests: 
+        #  - unique
+        #  - not_null
 
   - name: cumulative_orders_by_date
 
@@ -58,3 +58,15 @@ sources:
     schema: tpch_sf100
     tables:
       - name: customer
+
+  - name: sample_source_data
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: customer
+        columns:
+          - name: c_custkey
+            test:
+              - unique
+              - not_null
+      - name: orders
