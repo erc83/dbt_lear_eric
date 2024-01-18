@@ -10,9 +10,10 @@ from {{ source('sample_source_data', 'customer') }} c
 LEFT JOIN {{ source('sample_source_data', 'orders') }} o
 ON c.c_custkey = o.o_custkey
 
-group by
-    c.c_custkey,
-    c.c_name,
-    c.c_nationkey
+-- group by
+--     c.c_custkey,
+--     c.c_name,
+--     c.c_nationkey
 
+{{ group_by(3) }}
 
