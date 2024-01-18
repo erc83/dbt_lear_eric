@@ -2,8 +2,8 @@
 
     {% set sql %}
 
-        alter warehouse {{warehouse_name}} suspend
-        -- alter warehouse {{warehouse_name}} resume
+        -- alter warehouse {{warehouse_name}} suspend
+         alter warehouse {{warehouse_name}} resume
 
     {% endset %}
 
