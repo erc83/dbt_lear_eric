@@ -10,7 +10,7 @@ select distinct
 from orders
 
 {% if target.name == 'dev' %}
-where year(o_orderdate) = 1996
+    where year(o_orderdate) = 1996
 {% endif %}
 
 order by o_orderdate

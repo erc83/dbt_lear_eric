@@ -1,6 +1,6 @@
 
 
-with sample_customer as (
+with sample_customer as (    -- tiene que tener el AS
     SELECT *
     FROM {{ source('sample2', 'customer') }}
 )
