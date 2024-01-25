@@ -6,7 +6,7 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table', alias='first_model', post_hook='grant select on {{this}} to role analyst') }}
+{{ config(materialized='table', alias='first_model', tags=["nightly", "example"], post_hook='grant select on {{this}} to role analyst') }}
 
 with source_data as (
     -- select 1 as id, 'CA' as state, '2020-01-01 00:00:00.000'::timestamp as updated_at

@@ -50,6 +50,7 @@ models:
     example:
       +materialized: table
       pre-hook: "insert into DBT.AUDIT_ERIC (model, state, time) values ('{{this.name}}', 'starting model deployment', current_timestamp )"
+      #tags: "nightly"
 
 vars:
   my_first_variable: True
